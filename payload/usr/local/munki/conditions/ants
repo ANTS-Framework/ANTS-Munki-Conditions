@@ -9,7 +9,7 @@ from Foundation import CFPreferencesCopyAppValue
 
 
 def find_ants_exe():
-    paths = [u'/Library/ANTS-Framework/bin/ants', u'/usr/local/bin/ants']
+    paths = [u'/Library/ANTS-Framework/Python.framework/Versions/Current/bin/ants', u'/usr/local/bin/ants']
     for p in paths:
         if os.path.isfile(p):
             return p
